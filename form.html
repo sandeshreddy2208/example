@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Any queries?</title>
+</head>
+
+<body>
+    <h1>Enter your details</h1>
+    <form action="mailto:reddysandesh2@gmail.com" enctype="text/plain"> <!-- Here mailto: is where your user data is going to be collected/stored and enctype is how your user data should look like in your submitted form-->
+        <div> <label for="myname">Name:</label>
+            <input type="text" name="name" id="myname">
+        </div>
+
+
+        <div>
+            <label for="myage">Age:</label>
+            <input type="number" type="input" name="age" id="myage">
+            <!-- You can even give different type of input type for a single element-->
+        </div>
+        <div>
+            <label for="myemail">Email:</label>
+            <input type="email" name="email" id="myemail">
+        </div>
+        <div>
+            <label for="mypass">password</label>
+            <input type="password" name="password" id="mypass">
+        </div>
+        <div>
+            <label for="myfile">File</label>
+            <input type="file" name="file" id="myfile">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            Male:<input type="radio" name="radio" id="gender">
+            Female:<input type="radio" name="radio" id="gender">
+            Others:<input type="radio" name="radio" id="gender">
+            <!-- So if you give any different name in the radio input then we can select various different options but we want only one option for example gender so we have to give only a similar name to all of the radio type tags-->
+        </div>
+        <div>
+            <select name="car" id="mycar">    <!-- for select tags you no need to typein the input tag and inside the select tag you have to put in the option tag to use the tag-->
+                <option value="1">BMW</option>
+                <option value="2">Buggati</option>
+                <option value="3">Logitech</option>
+                <option value="4" selected>Razer</option>
+            </select>
+
+        </div>
+        <div>
+            Are you Single?<input type="checkbox" name="checkbox" id="checkb">
+        </div>
+        <div>
+            <label for="textarea">Write about yourself!</label>
+        </div>
+        <div>
+            <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="Reset now!">
+            <input type="submit" value="Submit now!">
+        </div>
+        <!-- <div>
+            <input type="button" value="submit">
+        </div> -->
+    </form>
+
+
+</body>
+
+</html>
